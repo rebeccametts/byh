@@ -15,10 +15,10 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Lato:300|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
     
-    	<!-- Start Photo Carousel -->
+    	<!-- Photo Carousel -->
 		<link rel="stylesheet" type="text/css" href="css/carousel_style.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<!-- End Photo Carousel -->
+		<!-- Photo Carousel -->
 		
 		<!-- Footer Style -->
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -45,7 +45,7 @@
          <a href="#" id="menu-icon"></a>
            <ul>
             <li id="nodisplay_mobile"><a href="http://braveyounghearts.net" data-filter=".home" class="menu"><img src="img/byh_menu.png" alt="Brave Young Hearts logo" title="logo" /></a></li>
-             <li class="current" class="hide"><a href="http://braveyounghearts.net" data-filter=".home" class="menu">HOME</a></li>
+            <li class="current" id="hide"><a href="http://braveyounghearts.net" data-filter=".home" class="menu">HOME</a></li>
             <li><a href="./about.html" data-filter=".about" class="menu">ABOUT US</a></li>
             <li><a href="./events.html" data-filter=".events" class="menu">NEWS & EVENTS</a></li>
             <li><a href="./support.html" data-filter=".support" class="menu">GET INVOLVED</a></li>
@@ -67,66 +67,67 @@
     		<BR>
     		
     		<!-- Start Photo Carousel -->
-			<div id="slider-container1">
-			<div class="ws_images"><ul>
-					<li><img src="img/carousel/0.jpg" /></li>
-					<li><img src="img/carousel/1.jpg" /></li>
-					<li><img src="img/carousel/2.jpg" /></li>
-					<li><img src="img/carousel/3.jpg" /></li>
-					<li><img src="img/carousel/4.jpg" /></li>
-					<li><img src="img/carousel/5.jpg" /></li>
-					<li><img src="img/carousel/6.jpg" /></li>
-					<li><img src="img/carousel/7.jpg" /></li>
-					<li><img src="img/carousel/8.jpg" /></li>
-					<li><img src="img/carousel/9.jpg" /></li>
-					<li><img src="img/carousel/10.jpg" /></li>
-					<li><img src="img/carousel/11.jpg" /></li>
-					<li><img src="img/carousel/12.jpg" /></li>
-					<li><img src="img/carousel/13.jpg" /></li>
-					<li><img src="img/carousel/14.jpg" /></li>
-					<li><img src="img/carousel/15.jpg" /></li>
-					<li><img src="img/carousel/16.jpg" /></li>
-					<li><img src="img/carousel/17.jpg" /></li>
-					<li><img src="img/carousel/18.jpg" /></li>
-					<li><img src="img/carousel/19.jpg" /></li>
-					<li><img src="img/carousel/20.jpg" /></li>
-					<li><img src="img/carousel/21.jpg" /></li>
-					<li><img src="img/carousel/22.jpg" /></li>
-					<li><img src="img/carousel/23.jpg" /></li>
-					<li><img src="img/carousel/24.jpg" /></li>
-				</ul></div>
-				<div class="ws_bullets"><div>
-					<a href="#"><span><img src="img/thumb/0.jpg" />1</span></a>
-					<a href="#"><span><img src="img/thumb/1.jpg" />2</span></a>
-					<a href="#"><span><img src="img/thumb/2.jpg" />3</span></a>
-					<a href="#"><span><img src="img/thumb/3.jpg" />4</span></a>
-					<a href="#"><span><img src="img/thumb/4.jpg" />5</span></a>
-					<a href="#"><span><img src="img/thumb/5.jpg" />6</span></a>
-					<a href="#"><span><img src="img/thumb/6.jpg" />7</span></a>
-					<a href="#"><span><img src="img/thumb/7.jpg" />8</span></a>
-					<a href="#"><span><img src="img/thumb/8.jpg" />9</span></a>
-					<a href="#"><span><img src="img/thumb/9.jpg" />10</span></a>
-					<a href="#"><span><img src="img/thumb/10.jpg" />11</span></a>
-					<a href="#"><span><img src="img/thumb/11.jpg" />12</span></a>
-					<a href="#"><span><img src="img/thumb/12.jpg" />13</span></a>
-					<a href="#"><span><img src="img/thumb/13.jpg" />14</span></a>
-					<a href="#"><span><img src="img/thumb/14.jpg" />15</span></a>
-					<a href="#"><span><img src="img/thumb/15.jpg" />16</span></a>
-					<a href="#"><span><img src="img/thumb/16.jpg" />17</span></a>
-					<a href="#"><span><img src="img/thumb/17.jpg" />18</span></a>
-					<a href="#"><span><img src="img/thumb/18.jpg" />19</span></a>
-					<a href="#"><span><img src="img/thumb/19.jpg" />20</span></a>
-					<a href="#"><span><img src="img/thumb/20.jpg" />21</span></a>
-					<a href="#"><span><img src="img/thumb/21.jpg" />22</span></a>
-					<a href="#"><span><img src="img/thumb/22.jpg" />23</span></a>
-					<a href="#"><span><img src="img/thumb/23.jpg" />24</span></a>
-					<a href="#"><span><img src="img/thumb/24.jpg" />25</span></a>
-					<a href="#"><span><img src="img/thumb/25.jpg" />26</span></a>
-				</div></div><div class="ws_script" style="position:absolute;left:-99%"></div>
-			<div class="ws_shadow"></div>
-			</div>	
-			<script type="text/javascript" src="js/slider.js"></script>
-			<script type="text/javascript" src="js/slider_script.js"></script>
+    		<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="img/carousel/0.jpg" alt="0" title="0" /></li>
+		<li><img src="img/carousel/1.jpg" alt="1" title="1" /></li>
+		<li><img src="img/carousel/2.jpg" alt="2" title="2" /></li>
+		<li><img src="img/carousel/3.jpg" alt="3" title="3" /></li>
+		<li><img src="img/carousel/4.jpg" alt="4" title="4" /></li>
+		<li><img src="img/carousel/5.jpg" alt="5" title="5" /></li>
+		<li><img src="img/carousel/6.jpg" alt="6" title="6" /></li>
+		<li><img src="img/carousel/7.jpg" alt="7" title="7" /></li>
+		<li><img src="img/carousel/8.jpg" alt="8" title="8" /></li>
+		<li><img src="img/carousel/9.jpg" alt="9" title="9" /></li>
+		<li><img src="img/carousel/10.jpg" alt="10" title="10" /></li>
+		<li><img src="img/carousel/11.jpg" alt="11" title="11" /></li>
+		<li><img src="img/carousel/12.jpg" alt="12" title="12" /></li>
+		<li><img src="img/carousel/13.jpg" alt="13" title="13" /></li>
+		<li><img src="img/carousel/14.jpg" alt="14" title="14" /></li>
+		<li><img src="img/carousel/15.jpg" alt="15" title="15" /></li>
+		<li><img src="img/carousel/16.jpg" alt="16" title="16" /></li>
+		<li><img src="img/carousel/17.jpg" alt="17" title="17" /></li>
+		<li><img src="img/carousel/18.jpg" alt="18" title="18" /></li>
+		<li><img src="img/carousel/19.jpg" alt="19" title="19" /></li>
+		<li><img src="img/carousel/20.jpg" alt="20" title="20" /></li>
+		<li><img src="img/carousel/21.jpg" alt="21" title="21" /></li>
+		<li><img src="img/carousel/22.jpg" alt="22" title="22" /></li>
+		<li><img src="img/carousel/23.jpg" alt="23" title="23" /></li>
+		<li><img src="img/carousel/24.jpg" alt="24" title="24" /></li>
+		<li><img src="img/carousel/25.jpg" alt="25" title="25" /></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="0"><span><img src="img/thumb/0.jpg" alt="0"/>1</span></a>
+		<a href="#" title="1"><span><img src="img/thumb/1.jpg" alt="1"/>2</span></a>
+		<a href="#" title="2"><span><img src="img/thumb/2.jpg" alt="2"/>3</span></a>
+		<a href="#" title="3"><span><img src="img/thumb/3.jpg" alt="3"/>4</span></a>
+		<a href="#" title="4"><span><img src="img/thumb/4.jpg" alt="4"/>5</span></a>
+		<a href="#" title="5"><span><img src="img/thumb/5.jpg" alt="5"/>6</span></a>
+		<a href="#" title="6"><span><img src="img/thumb/6.jpg" alt="6"/>7</span></a>
+		<a href="#" title="7"><span><img src="img/thumb/7.jpg" alt="7"/>8</span></a>
+		<a href="#" title="8"><span><img src="img/thumb/8.jpg" alt="8"/>9</span></a>
+		<a href="#" title="9"><span><img src="img/thumb/9.jpg" alt="9"/>10</span></a>
+		<a href="#" title="10"><span><img src="img/thumb/10.jpg" alt="10"/>11</span></a>
+		<a href="#" title="11"><span><img src="img/thumb/11.jpg" alt="11"/>12</span></a>
+		<a href="#" title="12"><span><img src="img/thumb/12.jpg" alt="12"/>13</span></a>
+		<a href="#" title="13"><span><img src="img/thumb/13.jpg" alt="13"/>14</span></a>
+		<a href="#" title="14"><span><img src="img/thumb/14.jpg" alt="14"/>15</span></a>
+		<a href="#" title="15"><span><img src="img/thumb/15.jpg" alt="15"/>16</span></a>
+		<a href="#" title="16"><span><img src="img/thumb/16.jpg" alt="16"/>17</span></a>
+		<a href="#" title="17"><span><img src="img/thumb/17.jpg" alt="17"/>18</span></a>
+		<a href="#" title="18"><span><img src="img/thumb/18.jpg" alt="18"/>19</span></a>
+		<a href="#" title="19"><span><img src="img/thumb/19.jpg" alt="19"/>20</span></a>
+		<a href="#" title="20"><span><img src="img/thumb/20.jpg" alt="20"/>21</span></a>
+		<a href="#" title="21"><span><img src="img/thumb/21.jpg" alt="21"/>22</span></a>
+		<a href="#" title="22"><span><img src="img/thumb/22.jpg" alt="22"/>23</span></a>
+		<a href="#" title="23"><span><img src="img/thumb/23.jpg" alt="23"/>24</span></a>
+		<a href="#" title="24"><span><img src="img/thumb/24.jpg" alt="24"/>25</span></a>
+		<a href="#" title="25"><span><img src="img/thumb/25.jpg" alt="25"/>26</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.6m</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/slider_script.js"></script>
 			<!-- End Photo Carousel -->
 			
 			<BR>

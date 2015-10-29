@@ -157,7 +157,7 @@ a:hover, a:focus {
     padding: 2px;
 	}
 
-.hide {
+#hide {
 		display: none;
 	}
 
@@ -344,7 +344,7 @@ color: #699A40; Dark Green
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
 	
 	#main_background {
     position: absolute;
@@ -385,6 +385,10 @@ color: #699A40; Dark Green
 	
 	#nodisplay_mobile {
 		display: none;
+	}
+	
+	#hide {
+	    display: block;
 	}
     
 	.nav .current {
